@@ -1,0 +1,83 @@
+
+/* Chat message styling */
+.chat-message-user {
+  background-color: #e9f5ff;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  max-width: 80%;
+  margin-left: auto;
+}
+
+.chat-message-ai {
+  background-color: #f0f1f3;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  max-width: 80%;
+  margin-right: auto;
+}
+
+/* Math equation styling */
+.math-inline {
+  display: inline-block;
+}
+
+.math-display {
+  display: block;
+  margin: 0.5rem 0;
+  overflow-x: auto;
+}
+
+/* Override MathJax styling for better integration */
+.MathJax {
+  font-size: 115% !important;
+}
+
+/* Ensure math equations have proper spacing */
+.chat-message-ai .MathJax {
+  margin: 0.5rem 0;
+}
+
+/* Make inline math stand out slightly */
+.chat-message-ai span.math-inline {
+  background-color: #f9f9fb;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+}
+
+/* Display math should have more prominence */
+.chat-message-ai div.math-display {
+  background-color: #f9f9fb;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+/* Bold text styling */
+.chat-message-ai strong {
+  font-weight: 600;
+}
+
+/* Scroll to bottom button hover effect */
+button[aria-label="Scroll to bottom"] {
+  transition: transform 0.2s ease-in-out;
+}
+
+button[aria-label="Scroll to bottom"]:hover {
+  transform: translateY(-2px);
+}
+
+/* List formatting in messages */
+.chat-message-ai ol,
+.chat-message-ai ul {
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+
+.chat-message-ai li {
+  margin-bottom: 0.5rem;
+}
+
+.chat-message-ai li > ul,
+.chat-message-ai li > ol {
+  margin-top: 0.5rem;
+}
